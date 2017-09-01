@@ -16,7 +16,7 @@ UITableViewDelegate,
 UITableViewDataSource>
 {
     UITableView *table;
-    LRCycleScrollView *cycleScrollView;
+    LRCycleScrollView *cycleScrollView;   
 }
 
 @end
