@@ -1,5 +1,5 @@
 //
-//  LoginViewController.h
+//  LDNewsCell.h
 //  ITSILeader
 //
 //  Created by panshen on 2017/9/1.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
-
-@property (nonatomic, assign) BOOL isLogout;
+@interface LDNewsCell : UITableViewCell
 
 @end

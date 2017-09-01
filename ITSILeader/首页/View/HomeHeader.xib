@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner.png" translatesAutoresizingMaskIntoConstraints="NO" id="KgZ-Po-lGz">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="1qT-Jt-jGX"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDQ-Zx-dFV">
+                    <rect key="frame" x="15" y="168" width="74" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="74" id="OVQ-AG-etb"/>
+                        <constraint firstAttribute="height" constant="15" id="sqM-c7-GTK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" image="gzdt.png"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngH-d7-cCi">
+                    <rect key="frame" x="274" y="15" width="36" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="qrcode.png"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LY9-hP-7x8" customClass="GYChangeTextView">
+                    <rect key="frame" x="99" y="160" width="211" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KgZ-Po-lGz" secondAttribute="trailing" id="ICR-nD-ah7"/>
+                <constraint firstItem="LY9-hP-7x8" firstAttribute="leading" secondItem="HDQ-Zx-dFV" secondAttribute="trailing" constant="10" id="TOM-6N-NeV"/>
+                <constraint firstAttribute="trailing" secondItem="LY9-hP-7x8" secondAttribute="trailing" constant="10" id="V7V-ja-Mag"/>
+                <constraint firstItem="KgZ-Po-lGz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aQn-yp-aVz"/>
+                <constraint firstAttribute="trailing" secondItem="ngH-d7-cCi" secondAttribute="trailing" constant="10" id="bxn-RK-j2F"/>
+                <constraint firstItem="LY9-hP-7x8" firstAttribute="top" secondItem="KgZ-Po-lGz" secondAttribute="bottom" constant="10" id="d8l-a9-8hZ"/>
+                <constraint firstItem="HDQ-Zx-dFV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="fif-Ho-PjC"/>
+                <constraint firstItem="HDQ-Zx-dFV" firstAttribute="top" secondItem="KgZ-Po-lGz" secondAttribute="bottom" constant="18" id="l63-Hz-m8r"/>
+                <constraint firstItem="ngH-d7-cCi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="r6s-NK-ENL"/>
+                <constraint firstItem="KgZ-Po-lGz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uHg-vi-Drc"/>
+                <constraint firstAttribute="bottom" secondItem="LY9-hP-7x8" secondAttribute="bottom" constant="10" id="ufb-7b-QgX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backImage" destination="KgZ-Po-lGz" id="yt8-N7-e5x"/>
+                <outlet property="noticeLab" destination="LY9-hP-7x8" id="ZwH-yZ-Hct"/>
+                <outlet property="qrBtn" destination="ngH-d7-cCi" id="Dc2-tC-3Is"/>
+            </connections>
+            <point key="canvasLocation" x="24" y="53"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="banner.png" width="375" height="230"/>
+        <image name="gzdt.png" width="64" height="13"/>
+        <image name="qrcode.png" width="36" height="36"/>
+    </resources>
+</document>

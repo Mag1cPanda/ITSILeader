@@ -10,17 +10,10 @@
 
 @interface Globle : NSObject
 
-@property (nonatomic, copy) NSString *inscompany;
-@property (nonatomic, copy) NSString *userid;
 @property (nonatomic, copy) NSString *userflag;
-@property (nonatomic, copy) NSString *fullname;
-@property (nonatomic, copy) NSString *mobilephone;
-@property (nonatomic, copy) NSString *currenttime;
 @property (nonatomic, copy) NSString *token;
-@property (nonatomic, copy) NSString *photo;
-@property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) NSString *usercode;
-@property (nonatomic, copy) NSString *areaid;
+
+@property (nonatomic, assign) NSInteger userType;
 
 +(Globle *)getInstance;
 
