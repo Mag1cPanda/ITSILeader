@@ -32,7 +32,7 @@
     if (arr.count > 1)
     {
         _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _backBtn.frame = CGRectMake(0, 0, 44, 44);
+        _backBtn.frame = CGRectMake(0, 0, 27, 44);
         [_backBtn addTarget:self action:@selector(backAction) forControlEvents:1 << 6];
         
         [_backBtn setImage:[UIImage imageNamed:@"backbtn"] forState:0];

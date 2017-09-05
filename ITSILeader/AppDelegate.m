@@ -19,6 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    [Globle getInstance].userflag = @"zzb";
+    [Globle getInstance].token = @"EveRSX4N7L7tJwt5WSUSuTcCkMeoRoUTpA9hfvCxFXplQEsDO4tcoVI0n0asqEKk";
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     LoginViewController *loginVC = [LoginViewController new];
     self.window.rootViewController = loginVC;

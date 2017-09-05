@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0938EDDF1F5BE13800E9F097 /* EnterpriseSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0938EDDE1F5BE13800E9F097 /* EnterpriseSearchVC.m */; };
+		0938EDE21F5BE14E00E9F097 /* ManagerSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0938EDE11F5BE14E00E9F097 /* ManagerSearchVC.m */; };
+		0938EDE61F5BE2FA00E9F097 /* LDEnterpriseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0938EDE41F5BE2FA00E9F097 /* LDEnterpriseCell.m */; };
+		0938EDE71F5BE2FA00E9F097 /* LDEnterpriseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0938EDE51F5BE2FA00E9F097 /* LDEnterpriseCell.xib */; };
+		0938EDEB1F5BE30F00E9F097 /* LDManagerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0938EDE91F5BE30F00E9F097 /* LDManagerCell.m */; };
+		0938EDEC1F5BE30F00E9F097 /* LDManagerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0938EDEA1F5BE30F00E9F097 /* LDManagerCell.xib */; };
+		0938EDEE1F5BEEB200E9F097 /* EnterpriseSearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0938EDED1F5BEEB200E9F097 /* EnterpriseSearchVC.xib */; };
+		0938EDF01F5BEEC600E9F097 /* ManagerSearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0938EDEF1F5BEEC600E9F097 /* ManagerSearchVC.xib */; };
+		0938EDF31F5BF7BE00E9F097 /* LDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0938EDF21F5BF7BE00E9F097 /* LDTextField.m */; };
+		0938EDF61F5C067E00E9F097 /* calender@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0938EDF41F5C067E00E9F097 /* calender@2x.png */; };
+		0938EDF71F5C067E00E9F097 /* calender@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0938EDF51F5C067E00E9F097 /* calender@3x.png */; };
+		093E369D1F5E9C970012C05F /* LDEnterpriseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 093E369C1F5E9C970012C05F /* LDEnterpriseModel.m */; };
+		093E36A01F5E9CA70012C05F /* LDManagerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 093E369F1F5E9CA70012C05F /* LDManagerModel.m */; };
+		093E36A31F5EA85C0012C05F /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 093E36A21F5EA85C0012C05F /* NewsModel.m */; };
+		093E36A71F5EAAFB0012C05F /* LDEmptyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 093E36A51F5EAAFB0012C05F /* LDEmptyCell.m */; };
+		093E36A81F5EAAFB0012C05F /* LDEmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 093E36A61F5EAAFB0012C05F /* LDEmptyCell.xib */; };
+		099785C01F5CEC2800F84542 /* LDAreaPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 099785BF1F5CEC2800F84542 /* LDAreaPicker.m */; };
 		09C6A5FA1F58F1920039F18A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C6A5F91F58F1920039F18A /* main.m */; };
 		09C6A5FD1F58F1920039F18A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C6A5FC1F58F1920039F18A /* AppDelegate.m */; };
 		09C6A6051F58F1920039F18A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C6A6041F58F1920039F18A /* Assets.xcassets */; };
@@ -140,6 +157,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0938EDDD1F5BE13800E9F097 /* EnterpriseSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterpriseSearchVC.h; sourceTree = "<group>"; };
+		0938EDDE1F5BE13800E9F097 /* EnterpriseSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterpriseSearchVC.m; sourceTree = "<group>"; };
+		0938EDE01F5BE14E00E9F097 /* ManagerSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerSearchVC.h; sourceTree = "<group>"; };
+		0938EDE11F5BE14E00E9F097 /* ManagerSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerSearchVC.m; sourceTree = "<group>"; };
+		0938EDE31F5BE2FA00E9F097 /* LDEnterpriseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDEnterpriseCell.h; sourceTree = "<group>"; };
+		0938EDE41F5BE2FA00E9F097 /* LDEnterpriseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDEnterpriseCell.m; sourceTree = "<group>"; };
+		0938EDE51F5BE2FA00E9F097 /* LDEnterpriseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDEnterpriseCell.xib; sourceTree = "<group>"; };
+		0938EDE81F5BE30F00E9F097 /* LDManagerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDManagerCell.h; sourceTree = "<group>"; };
+		0938EDE91F5BE30F00E9F097 /* LDManagerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDManagerCell.m; sourceTree = "<group>"; };
+		0938EDEA1F5BE30F00E9F097 /* LDManagerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDManagerCell.xib; sourceTree = "<group>"; };
+		0938EDED1F5BEEB200E9F097 /* EnterpriseSearchVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnterpriseSearchVC.xib; sourceTree = "<group>"; };
+		0938EDEF1F5BEEC600E9F097 /* ManagerSearchVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManagerSearchVC.xib; sourceTree = "<group>"; };
+		0938EDF11F5BF7BE00E9F097 /* LDTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDTextField.h; sourceTree = "<group>"; };
+		0938EDF21F5BF7BE00E9F097 /* LDTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDTextField.m; sourceTree = "<group>"; };
+		0938EDF41F5C067E00E9F097 /* calender@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calender@2x.png"; sourceTree = "<group>"; };
+		0938EDF51F5C067E00E9F097 /* calender@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calender@3x.png"; sourceTree = "<group>"; };
+		093E369B1F5E9C970012C05F /* LDEnterpriseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDEnterpriseModel.h; sourceTree = "<group>"; };
+		093E369C1F5E9C970012C05F /* LDEnterpriseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDEnterpriseModel.m; sourceTree = "<group>"; };
+		093E369E1F5E9CA70012C05F /* LDManagerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDManagerModel.h; sourceTree = "<group>"; };
+		093E369F1F5E9CA70012C05F /* LDManagerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDManagerModel.m; sourceTree = "<group>"; };
+		093E36A11F5EA85C0012C05F /* NewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
+		093E36A21F5EA85C0012C05F /* NewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
+		093E36A41F5EAAFB0012C05F /* LDEmptyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDEmptyCell.h; sourceTree = "<group>"; };
+		093E36A51F5EAAFB0012C05F /* LDEmptyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDEmptyCell.m; sourceTree = "<group>"; };
+		093E36A61F5EAAFB0012C05F /* LDEmptyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LDEmptyCell.xib; sourceTree = "<group>"; };
+		099785BE1F5CEC2800F84542 /* LDAreaPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDAreaPicker.h; sourceTree = "<group>"; };
+		099785BF1F5CEC2800F84542 /* LDAreaPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDAreaPicker.m; sourceTree = "<group>"; };
 		09C6A5F51F58F1920039F18A /* ITSILeader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITSILeader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C6A5F91F58F1920039F18A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		09C6A5FB1F58F1920039F18A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -744,10 +788,16 @@
 				09C6A7511F5940A90039F18A /* XMViewController.m */,
 				09C6A7531F5941FC0039F18A /* GJViewController.h */,
 				09C6A7541F5941FC0039F18A /* GJViewController.m */,
-				09C6A7561F5942350039F18A /* ManagerInquireVC.h */,
-				09C6A7571F5942350039F18A /* ManagerInquireVC.m */,
 				09C6A7591F59424B0039F18A /* EnterpriseInquireVC.h */,
 				09C6A75A1F59424B0039F18A /* EnterpriseInquireVC.m */,
+				09C6A7561F5942350039F18A /* ManagerInquireVC.h */,
+				09C6A7571F5942350039F18A /* ManagerInquireVC.m */,
+				0938EDDD1F5BE13800E9F097 /* EnterpriseSearchVC.h */,
+				0938EDDE1F5BE13800E9F097 /* EnterpriseSearchVC.m */,
+				0938EDED1F5BEEB200E9F097 /* EnterpriseSearchVC.xib */,
+				0938EDE01F5BE14E00E9F097 /* ManagerSearchVC.h */,
+				0938EDE11F5BE14E00E9F097 /* ManagerSearchVC.m */,
+				0938EDEF1F5BEEC600E9F097 /* ManagerSearchVC.xib */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -791,6 +841,8 @@
 		09C6A7281F5912CA0039F18A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				093E36A11F5EA85C0012C05F /* NewsModel.h */,
+				093E36A21F5EA85C0012C05F /* NewsModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -801,6 +853,9 @@
 				09C6A79A1F596EAE0039F18A /* LDNewsCell.h */,
 				09C6A79B1F596EAE0039F18A /* LDNewsCell.m */,
 				09C6A79C1F596EAE0039F18A /* LDNewsCell.xib */,
+				093E36A41F5EAAFB0012C05F /* LDEmptyCell.h */,
+				093E36A51F5EAAFB0012C05F /* LDEmptyCell.m */,
+				093E36A61F5EAAFB0012C05F /* LDEmptyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -808,6 +863,10 @@
 		09C6A72A1F5912CF0039F18A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				093E369B1F5E9C970012C05F /* LDEnterpriseModel.h */,
+				093E369C1F5E9C970012C05F /* LDEnterpriseModel.m */,
+				093E369E1F5E9CA70012C05F /* LDManagerModel.h */,
+				093E369F1F5E9CA70012C05F /* LDManagerModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -824,6 +883,16 @@
 				09C6A7951F5956120039F18A /* HomeRightCell.h */,
 				09C6A7961F5956120039F18A /* HomeRightCell.m */,
 				09C6A7971F5956120039F18A /* HomeRightCell.xib */,
+				0938EDE31F5BE2FA00E9F097 /* LDEnterpriseCell.h */,
+				0938EDE41F5BE2FA00E9F097 /* LDEnterpriseCell.m */,
+				0938EDE51F5BE2FA00E9F097 /* LDEnterpriseCell.xib */,
+				0938EDE81F5BE30F00E9F097 /* LDManagerCell.h */,
+				0938EDE91F5BE30F00E9F097 /* LDManagerCell.m */,
+				0938EDEA1F5BE30F00E9F097 /* LDManagerCell.xib */,
+				0938EDF11F5BF7BE00E9F097 /* LDTextField.h */,
+				0938EDF21F5BF7BE00E9F097 /* LDTextField.m */,
+				099785BE1F5CEC2800F84542 /* LDAreaPicker.h */,
+				099785BF1F5CEC2800F84542 /* LDAreaPicker.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -844,6 +913,8 @@
 			children = (
 				09C6A7781F5943E70039F18A /* qrcode@2x.png */,
 				09C6A7791F5943E70039F18A /* qrcode@3x.png */,
+				0938EDF41F5C067E00E9F097 /* calender@2x.png */,
+				0938EDF51F5C067E00E9F097 /* calender@3x.png */,
 				09C6A7741F5943BD0039F18A /* mineback@2x.png */,
 				09C6A7751F5943BD0039F18A /* mineback@3x.png */,
 				09C6A7701F5943990039F18A /* search@2x.png */,
@@ -898,6 +969,7 @@
 				TargetAttributes = {
 					09C6A5F41F58F1920039F18A = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5GVMMT2RZ7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -925,6 +997,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0938EDE71F5BE2FA00E9F097 /* LDEnterpriseCell.xib in Resources */,
 				09C6A7721F5943990039F18A /* search@2x.png in Resources */,
 				09C6A7801F5946A80039F18A /* HomeHeader.xib in Resources */,
 				09C6A76E1F5943620039F18A /* banner@2x.png in Resources */,
@@ -936,6 +1009,7 @@
 				09C6A7411F593D0F0039F18A /* navbar@2x.png in Resources */,
 				09C6A7991F5956120039F18A /* HomeRightCell.xib in Resources */,
 				09C6A7761F5943BD0039F18A /* mineback@2x.png in Resources */,
+				0938EDEC1F5BE30F00E9F097 /* LDManagerCell.xib in Resources */,
 				09C6A6051F58F1920039F18A /* Assets.xcassets in Resources */,
 				09C6A7491F593DC00039F18A /* backbtn@3x.png in Resources */,
 				09C6A76A1F59434A0039F18A /* gj@2x.png in Resources */,
@@ -946,14 +1020,19 @@
 				09C6A7671F5943130039F18A /* yx@3x.png in Resources */,
 				09C6A7661F5943130039F18A /* yx@2x.png in Resources */,
 				09C6A76F1F5943620039F18A /* banner@3x.png in Resources */,
+				093E36A81F5EAAFB0012C05F /* LDEmptyCell.xib in Resources */,
 				09C6A7631F5942F80039F18A /* xm@3x.png in Resources */,
 				09C6A6C71F5908840039F18A /* slide_navon.png in Resources */,
 				09C6A7481F593DC00039F18A /* backbtn@2x.png in Resources */,
 				09C6A7621F5942F80039F18A /* xm@2x.png in Resources */,
 				09C6A77B1F5943E70039F18A /* qrcode@3x.png in Resources */,
+				0938EDF61F5C067E00E9F097 /* calender@2x.png in Resources */,
+				0938EDF01F5BEEC600E9F097 /* ManagerSearchVC.xib in Resources */,
+				0938EDF71F5C067E00E9F097 /* calender@3x.png in Resources */,
 				09C6A6A01F5906A10039F18A /* WSDatePickerView.xib in Resources */,
 				09C6A7131F5908950039F18A /* MJRefresh.bundle in Resources */,
 				09C6A77A1F5943E70039F18A /* qrcode@2x.png in Resources */,
+				0938EDEE1F5BEEB200E9F097 /* EnterpriseSearchVC.xib in Resources */,
 				09C6A76B1F59434A0039F18A /* gj@3x.png in Resources */,
 				09C6A7451F593D9F0039F18A /* gzdt@3x.png in Resources */,
 				09C6A79E1F596EAE0039F18A /* LDNewsCell.xib in Resources */,
@@ -968,6 +1047,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				099785C01F5CEC2800F84542 /* LDAreaPicker.m in Sources */,
 				09C6A6831F5906880039F18A /* Reachability.m in Sources */,
 				09C6A66D1F5906880039F18A /* AFHTTPRequestOperation.m in Sources */,
 				09C6A67A1F5906880039F18A /* UIImageView+AFNetworking.m in Sources */,
@@ -978,6 +1058,7 @@
 				09C6A7061F5908950039F18A /* MJRefreshBackFooter.m in Sources */,
 				09C6A70F1F5908950039F18A /* MJRefreshBackStateFooter.m in Sources */,
 				09C6A66E1F5906880039F18A /* AFHTTPRequestOperationManager.m in Sources */,
+				093E36A71F5EAAFB0012C05F /* LDEmptyCell.m in Sources */,
 				09C6A7161F5908950039F18A /* UIScrollView+MJExtension.m in Sources */,
 				09C6A6C41F5908840039F18A /* LRCycleScrollView.m in Sources */,
 				09C6A69F1F5906A10039F18A /* WSDatePickerView.m in Sources */,
@@ -988,6 +1069,7 @@
 				09C6A7981F5956120039F18A /* HomeRightCell.m in Sources */,
 				09C6A7151F5908950039F18A /* NSBundle+MJRefresh.m in Sources */,
 				09C6A7051F5908950039F18A /* MJRefreshAutoFooter.m in Sources */,
+				0938EDEB1F5BE30F00E9F097 /* LDManagerCell.m in Sources */,
 				09C6A68C1F5906880039F18A /* UIButton+WebCache.m in Sources */,
 				09C6A6AE1F5906CE0039F18A /* UIColor+Hex.m in Sources */,
 				09C6A70E1F5908950039F18A /* MJRefreshBackNormalFooter.m in Sources */,
@@ -999,6 +1081,7 @@
 				09C6A79D1F596EAE0039F18A /* LDNewsCell.m in Sources */,
 				09C6A67B1F5906880039F18A /* UIProgressView+AFNetworking.m in Sources */,
 				09C6A6701F5906880039F18A /* AFNetworkReachabilityManager.m in Sources */,
+				0938EDE21F5BE14E00E9F097 /* ManagerSearchVC.m in Sources */,
 				09C6A70A1F5908950039F18A /* MJRefreshAutoGifFooter.m in Sources */,
 				09C6A6A31F5906B40039F18A /* Globle.m in Sources */,
 				09C6A6801F5906880039F18A /* AFNetWorkServiceCar.m in Sources */,
@@ -1036,14 +1119,19 @@
 				09C6A69E1F5906A10039F18A /* UIView+Extension.m in Sources */,
 				09C6A67F1F5906880039F18A /* AFNetWorkService2.m in Sources */,
 				09C6A7081F5908950039F18A /* MJRefreshFooter.m in Sources */,
+				093E36A01F5E9CA70012C05F /* LDManagerModel.m in Sources */,
 				09C6A68E1F5906880039F18A /* UIImage+MultiFormat.m in Sources */,
+				0938EDE61F5BE2FA00E9F097 /* LDEnterpriseCell.m in Sources */,
 				09C6A6891F5906880039F18A /* SDWebImageDownloaderOperation.m in Sources */,
 				09C6A6B21F5906CE0039F18A /* Util.m in Sources */,
+				093E36A31F5EA85C0012C05F /* NewsModel.m in Sources */,
 				09C6A7551F5941FC0039F18A /* GJViewController.m in Sources */,
 				09C6A66F1F5906880039F18A /* AFHTTPSessionManager.m in Sources */,
 				09C6A6811F5906880039F18A /* HttpRequestInfo.m in Sources */,
 				09C6A6781F5906880039F18A /* UIAlertView+AFNetworking.m in Sources */,
 				09C6A6B01F5906CE0039F18A /* UIView+CornerRadius.m in Sources */,
+				093E369D1F5E9C970012C05F /* LDEnterpriseModel.m in Sources */,
+				0938EDF31F5BF7BE00E9F097 /* LDTextField.m in Sources */,
 				09C6A7181F5908950039F18A /* UIView+MJExtension.m in Sources */,
 				09C6A6871F5906880039F18A /* SDWebImageDecoder.m in Sources */,
 				09C6A6C91F5908840039F18A /* TAAnimatedDotView.m in Sources */,
@@ -1059,6 +1147,7 @@
 				09C6A7101F5908950039F18A /* MJRefreshGifHeader.m in Sources */,
 				09C6A6941F5906920039F18A /* MBProgressHUD.m in Sources */,
 				09C6A6751F5906880039F18A /* AFURLSessionManager.m in Sources */,
+				0938EDDF1F5BE13800E9F097 /* EnterpriseSearchVC.m in Sources */,
 				09C6A7121F5908950039F18A /* MJRefreshStateHeader.m in Sources */,
 				09C6A5FA1F58F1920039F18A /* main.m in Sources */,
 				09C6A6121F58F8500039F18A /* LoginViewController.m in Sources */,
@@ -1176,11 +1265,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5GVMMT2RZ7;
 				GCC_PREFIX_HEADER = /Users/panshen/Desktop/ITSILeader/ITSILeader/ITSILeader.pch;
 				INFOPLIST_FILE = ITSILeader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = longrise.ITSILeader;
+				PRODUCT_BUNDLE_IDENTIFIER = ITSILeader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1189,11 +1279,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5GVMMT2RZ7;
 				GCC_PREFIX_HEADER = /Users/panshen/Desktop/ITSILeader/ITSILeader/ITSILeader.pch;
 				INFOPLIST_FILE = ITSILeader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = longrise.ITSILeader;
+				PRODUCT_BUNDLE_IDENTIFIER = ITSILeader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

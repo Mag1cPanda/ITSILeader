@@ -25,7 +25,10 @@
 #define NSLog(...) printf("%f %s\n",[[NSDate date]timeIntervalSince1970],[[NSString stringWithFormat:__VA_ARGS__]UTF8String]);
 #endif
 
-#define LRServiceIP @"http://jgkckp.henanga.gov.cn/restservices/hndsapprest/"
+//外网测试地址
+#define LRServiceIP @"http://train.csi-s.org.cn:8099/restservices/itsiapprest/"
+//内网网测试地址
+//#define LRServiceIP @"http://192.168.4.213:86/ITSI/restservices/itsiapprest/"
 
 //颜色宏定义
 #define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]

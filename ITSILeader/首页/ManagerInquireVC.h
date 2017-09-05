@@ -10,4 +10,6 @@
 
 @interface ManagerInquireVC : BaseViewController
 
+@property (nonatomic, copy) NSString *level;
+
 @end

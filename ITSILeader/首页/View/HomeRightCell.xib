@@ -20,39 +20,40 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8888" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHv-pG-ke5">
-                        <rect key="frame" x="209" y="17" width="42" height="21"/>
+                        <rect key="frame" x="155" y="10" width="150" height="35"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="Mvz-rt-WJZ"/>
+                            <constraint firstAttribute="width" constant="150" id="6rC-jo-2MP"/>
+                            <constraint firstAttribute="height" constant="35" id="hZ4-Ed-dUP"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="高级项目经理登记查询" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLs-JE-kPS">
-                        <rect key="frame" x="155" y="40" width="150" height="21"/>
+                        <rect key="frame" x="155" y="45" width="150" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="R8Y-AO-jJy"/>
-                            <constraint firstAttribute="width" constant="150" id="fnq-IP-GyM"/>
+                            <constraint firstAttribute="height" constant="20" id="8Ln-Nq-CYh"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BLX-X1-Niy">
-                        <rect key="frame" x="55" y="10" width="80" height="60"/>
+                        <rect key="frame" x="60" y="10" width="80" height="60"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="80" id="56C-oF-6Ta"/>
-                            <constraint firstAttribute="height" constant="60" id="d9i-Bd-B2F"/>
+                            <constraint firstAttribute="width" constant="80" id="Fyb-dM-Ezk"/>
+                            <constraint firstAttribute="height" constant="60" id="dJ7-f8-dod"/>
                         </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="WHv-pG-ke5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="FhF-Je-Ps3"/>
-                    <constraint firstItem="WHv-pG-ke5" firstAttribute="centerX" secondItem="jLs-JE-kPS" secondAttribute="centerX" id="GiU-eK-yQV"/>
-                    <constraint firstItem="BLX-X1-Niy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Is6-yO-yFT"/>
-                    <constraint firstItem="BLX-X1-Niy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="55" id="Us6-Tp-4ib"/>
-                    <constraint firstAttribute="bottom" secondItem="jLs-JE-kPS" secondAttribute="bottom" constant="19" id="VH4-cf-aJh"/>
-                    <constraint firstAttribute="trailing" secondItem="jLs-JE-kPS" secondAttribute="trailing" constant="15" id="YZg-pU-n1Z"/>
+                    <constraint firstItem="BLX-X1-Niy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8NO-6K-fcv"/>
+                    <constraint firstItem="WHv-pG-ke5" firstAttribute="top" secondItem="BLX-X1-Niy" secondAttribute="top" id="A6O-Vj-Y3l"/>
+                    <constraint firstItem="jLs-JE-kPS" firstAttribute="trailing" secondItem="WHv-pG-ke5" secondAttribute="trailing" id="FaC-cg-x6j"/>
+                    <constraint firstItem="jLs-JE-kPS" firstAttribute="top" secondItem="WHv-pG-ke5" secondAttribute="bottom" id="HCm-3u-Kyf"/>
+                    <constraint firstItem="BLX-X1-Niy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="52" id="IJM-5e-Qfz"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="WHv-pG-ke5" secondAttribute="trailing" constant="7" id="NC7-ib-UVT"/>
+                    <constraint firstItem="jLs-JE-kPS" firstAttribute="leading" secondItem="WHv-pG-ke5" secondAttribute="leading" id="nSt-rU-DjQ"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
@@ -60,6 +61,7 @@
                 <outlet property="numLab" destination="WHv-pG-ke5" id="mag-MF-HXL"/>
                 <outlet property="titleLab" destination="jLs-JE-kPS" id="tYu-9V-bvm"/>
             </connections>
+            <point key="canvasLocation" x="33" y="85"/>
         </tableViewCell>
     </objects>
 </document>

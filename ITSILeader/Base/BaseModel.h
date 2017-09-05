@@ -10,4 +10,6 @@
 
 @interface BaseModel : NSObject
 
+-(instancetype)initWithDict:(NSDictionary *)dic;
+
 @end

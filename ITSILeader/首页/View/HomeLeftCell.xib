@@ -22,24 +22,24 @@
                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oqs-BD-Rye">
                         <rect key="frame" x="190" y="9" width="80" height="60"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="80" id="sf8-cq-hX5"/>
-                            <constraint firstAttribute="height" constant="60" id="vrf-8W-PPj"/>
+                            <constraint firstAttribute="width" constant="80" id="SfO-bS-K4P"/>
+                            <constraint firstAttribute="height" constant="60" id="jcH-4g-6G9"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8888" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dW0-op-YUi">
-                        <rect key="frame" x="82" y="17" width="42" height="21"/>
+                        <rect key="frame" x="28" y="9" width="150" height="35"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="aDP-D0-Po1"/>
+                            <constraint firstAttribute="height" constant="35" id="TpP-Nw-Azw"/>
+                            <constraint firstAttribute="width" constant="150" id="Vsk-OQ-x1v"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="高级项目经理登记查询" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWb-o0-lvX">
-                        <rect key="frame" x="28" y="40" width="150" height="21"/>
+                        <rect key="frame" x="28" y="44" width="150" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="150" id="J9W-1n-P7t"/>
-                            <constraint firstAttribute="height" constant="21" id="nHl-5F-Gto"/>
+                            <constraint firstAttribute="height" constant="20" id="noK-iV-nrJ"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -47,13 +47,13 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="TWb-o0-lvX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="1FI-iY-5XN"/>
-                    <constraint firstItem="dW0-op-YUi" firstAttribute="centerX" secondItem="TWb-o0-lvX" secondAttribute="centerX" id="4IP-zz-RFK"/>
-                    <constraint firstItem="oqs-BD-Rye" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ebb-hK-G5a"/>
-                    <constraint firstAttribute="trailing" secondItem="oqs-BD-Rye" secondAttribute="trailing" constant="50" id="Ux6-ce-wVQ"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="TWb-o0-lvX" secondAttribute="bottom" constant="11" id="YLR-aD-D2q"/>
-                    <constraint firstItem="dW0-op-YUi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="cuM-MR-Qja"/>
-                    <constraint firstItem="TWb-o0-lvX" firstAttribute="top" secondItem="dW0-op-YUi" secondAttribute="bottom" constant="2" id="uh0-cW-tx9"/>
+                    <constraint firstItem="TWb-o0-lvX" firstAttribute="top" secondItem="dW0-op-YUi" secondAttribute="bottom" id="0i9-pY-zZ9"/>
+                    <constraint firstItem="oqs-BD-Rye" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="52L-rW-ai4"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="oqs-BD-Rye" secondAttribute="trailing" constant="42" id="T71-Wy-8zr"/>
+                    <constraint firstItem="dW0-op-YUi" firstAttribute="top" secondItem="oqs-BD-Rye" secondAttribute="top" id="TUK-gp-V4N"/>
+                    <constraint firstItem="TWb-o0-lvX" firstAttribute="trailing" secondItem="dW0-op-YUi" secondAttribute="trailing" id="UTO-qq-hRz"/>
+                    <constraint firstItem="dW0-op-YUi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="idg-km-q9x"/>
+                    <constraint firstItem="TWb-o0-lvX" firstAttribute="leading" secondItem="dW0-op-YUi" secondAttribute="leading" id="mfJ-mb-bOp"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

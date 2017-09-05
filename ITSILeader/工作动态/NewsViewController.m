@@ -9,6 +9,8 @@
 #import "NewsViewController.h"
 #import "LRCycleScrollView.h"
 #import "LDNewsCell.h"
+#import "LDEmptyCell.h"
+#import "NewsModel.h"
 
 @interface NewsViewController ()
 <LRCycleScrollViewDelegate,
@@ -16,7 +18,13 @@ UITableViewDelegate,
 UITableViewDataSource>
 {
     UITableView *table;
-    LRCycleScrollView *cycleScrollView;   
+    LRCycleScrollView *cycleScrollView;
+    
+    NSMutableDictionary *bean;
+    NSMutableArray *dataArr;
+    
+    NSString *totalCount;
+    NSInteger page;
 }
 
 @end
@@ -26,8 +34,16 @@ UITableViewDataSource>
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    dataArr = [NSMutableArray array];
+    bean = [NSMutableDictionary dictionary];
+    [bean setValue:@"10" forKey:@"pagesize"];
+    [bean setValue:@"1" forKey:@"pagenum"];
+    
+    page = 1;
     
     [self initTable];
+    
+    [self loadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,9 +54,9 @@ UITableViewDataSource>
 #pragma mark - 初始化TableView
 -(void)initTable
 {
-    cycleScrollView = [LRCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, ScreenWidth, 200) placeholderImage:[UIImage imageNamed:@"slide_img"]];
+    cycleScrollView = [LRCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, ScreenWidth, 200) placeholderImage:[UIImage imageNamed:@"banner"]];
     cycleScrollView.delegate = self;
-    //    cycleScrollView.pageControlBottomOffset = 30;
+    cycleScrollView.pageControlBottomOffset = 20;
     cycleScrollView.infiniteLoop = YES;
     //    cycleScrollView.autoScrollTimeInterval = 3.0;
     cycleScrollView.autoScroll = false;
@@ -53,7 +69,7 @@ UITableViewDataSource>
     NSMutableArray *titleArr = [NSMutableArray arrayWithArray:imgURLArr];
     for (NSInteger i=0; i<titleArr.count; i++) {
         NSString *tmp = imgURLArr[i];
-        NSString *indexStr = [NSString stringWithFormat:@"%zi/%zi %@", i, titleArr.count, tmp];
+        NSString *indexStr = [NSString stringWithFormat:@"%zi/%zi  %@", i+1, titleArr.count, tmp];
         titleArr[i] =indexStr;
         
     }
@@ -69,6 +85,7 @@ UITableViewDataSource>
     table.dataSource = self;
     table.showsVerticalScrollIndicator = NO;
     table.tableHeaderView = cycleScrollView;
+    table.tableFooterView = [UIView new];
     //设置拉伸效果必须添加而不是设置tableHeaderView
     //    [table insertSubview:cycleScrollView atIndex:0];
     //    table.contentInset = UIEdgeInsetsMake(imageH, 0, 49, 0);
@@ -76,10 +93,8 @@ UITableViewDataSource>
     
     [self.view addSubview:table];
     
-    //    [table registerClass:[HomeSectionZero class] forCellReuseIdentifier:@"HomeSectionZero"];
-    
-    [table registerNib:[UINib nibWithNibName:@"HomeSectionOne" bundle:nil] forCellReuseIdentifier:@"HomeSectionOne"];
-    [table registerNib:[UINib nibWithNibName:@"HomeSectionTwo" bundle:nil] forCellReuseIdentifier:@"HomeSectionTwo"];
+    [table registerNib:[UINib nibWithNibName:@"LDNewsCell" bundle:nil] forCellReuseIdentifier:@"LDNewsCell"];
+    [table registerNib:[UINib nibWithNibName:@"LDEmptyCell" bundle:nil] forCellReuseIdentifier:@"LDEmptyCell"];
     
     table.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         
@@ -103,6 +118,37 @@ UITableViewDataSource>
     }];
 }
 
+#pragma mark - 加载数据
+-(void)loadData
+{
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    
+    [LSHttpManager requestWithServiceName:@"csitopnews" parameters:bean complete:^(id result, ResultType resultType) {
+        
+        [hud hideAnimated:true];
+        
+        NSLog(@"csitopnews ~ %@",result);
+        
+        if ([result[@"restate"] isEqualToString:@"1"]) {
+            
+            totalCount = result[@"redatas"][@"endNum"];
+            
+            id tmpObj = result[@"redatas"][@"result"];
+            
+            if ([tmpObj isKindOfClass:[NSArray class]]) {
+                NSArray *arr = tmpObj;
+                for (NSDictionary *dic in arr) {
+                    NewsModel *model = [[NewsModel alloc] initWithDict:dic];
+                    [dataArr addObject:model];
+                }
+            }
+            
+            [table reloadData];
+        }
+    }];
+}
+
+
 #pragma mark - LRCycleScrollViewDelegate
 -(void)cycleScrollView:(LRCycleScrollView *)cycleScrollView didScrollToIndex:(NSInteger)index
 {
@@ -117,19 +163,41 @@ UITableViewDataSource>
 #pragma mark - TableView Delegate & DataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 10;
+    if (dataArr.count > 0) {
+        return dataArr.count;
+    }
+    
+    else {
+        return 1;
+    }
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 100;
+    if (dataArr.count > 0) {
+        return 100;
+    }
+    
+    else {
+        return ScreenHeight-200-49;
+    }
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    LDNewsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LDNewsCell"];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    return cell;
+    if (dataArr.count > 0) {
+        LDNewsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LDNewsCell"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        return cell;
+    }
+    
+    else {
+        LDEmptyCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LDEmptyCell"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        return cell;
+    }
+    
+    
 }
 
 @end

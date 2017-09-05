@@ -10,4 +10,6 @@
 
 @interface EnterpriseInquireVC : BaseViewController
 
+@property (nonatomic, copy) NSString *type;
+
 @end

@@ -10,12 +10,14 @@
 
 @implementation BaseModel
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        
-    }
+-(void)setValue:(id)value forUndefinedKey:(NSString *)key {
+    NSLog(@"forUndefinedKey -> %@",key);
+}
+
+
+
+-(instancetype)initWithDict:(NSDictionary *)dic{
+    [self setValuesForKeysWithDictionary:dic];
     return self;
 }
 
